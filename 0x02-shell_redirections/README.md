@@ -1,1 +1,0 @@
-Shell permissions and redirections scripts
