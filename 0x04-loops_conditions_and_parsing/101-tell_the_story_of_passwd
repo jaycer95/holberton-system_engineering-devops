@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 FILENAME="/etc/passwd"
 while IFS=: read -r user pass userid groupid info home shell
 do
