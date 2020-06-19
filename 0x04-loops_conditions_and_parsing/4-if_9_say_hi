@@ -3,9 +3,9 @@
 i=1
 
 # print 10 times
-while [ $i -le 10 ]
+while [ $i -le 11 ]
 do
-	if [ $i = 9 ]
+	if [ $i = 10 ]
 	then
 		echo "Hi"
 	else
