@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# set i to 1
+i=1
+# print 100 times
+while [ $i -le 100 ]
+do
+        if [ $((i % 3)) == 0 -a $((i % 5)) == 0 ]
+        then
+                echo "FizzBuzz"
+	elif [ $((i % 3)) == 0 ]
+	then
+		echo "Fizz"
+	elif [ $((i % 5)) == 0 ]
+	then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+	i=$(( i+1 ))   # increments $n
+done
