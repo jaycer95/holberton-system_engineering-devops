@@ -13,9 +13,9 @@ case $1 in
     restart)
         pkill -SIGKILL -f $file
 	rm $file
-	echo "manage_my_process restarted"
-	./manage_my_process
-	echo $$ > $file;;
+	echo $$ > $file
+	./manage_my_process &
+	echo "manage_my_process restarted";;
     *)
         echo "Usage: manage_my_process {start|stop|restart}"
 esac
