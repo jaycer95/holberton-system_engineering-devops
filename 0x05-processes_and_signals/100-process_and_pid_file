@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # FILE
-file = "/var/run/holbertonscript.pid"
+file="/var/run/holbertonscript.pid"
 sudo touch $file
 echo $$ > $file
 i=0
-while [ i -lt 10 ]
+while [ $i -lt 10 ]
 do
 echo "To infinity and beyond"
 trap 'echo "I hate the kill command"; sudo rm $file' SIGTERM
