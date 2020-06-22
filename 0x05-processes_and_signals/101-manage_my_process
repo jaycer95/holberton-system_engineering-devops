@@ -7,12 +7,12 @@ case $1 in
 	./manage_my_process &
 	echo "manage_my_process started";;
     stop)
-        pkill -SIGKILL -f $file
-	rm $file
+        pkill -SIGKILL -f ./manage_my_process
+	sudo rm $file
 	echo "manage_my_process stopped";;
     restart)
-        pkill -SIGKILL -f $file
-	rm $file
+        pkill -SIGKILL -f ./manage_my_process
+	sudo rm $file
 	echo $$ > $file
 	./manage_my_process &
 	echo "manage_my_process restarted";;
