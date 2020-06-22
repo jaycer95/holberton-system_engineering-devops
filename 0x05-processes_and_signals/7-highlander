@@ -5,5 +5,5 @@ while [ $i < 10 ]
 do
     echo "To infinity and beyond"
     sleep 2
-    trap echo "I am invincible!!!"
 done
+trap echo "I am invincible!!!"
