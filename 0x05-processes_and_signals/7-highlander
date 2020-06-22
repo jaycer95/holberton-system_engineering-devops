@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Display text
 i=0
-trap echo"I am invincible!!!" SIGTERM
 while [ $i -lt 10 ]
 do
+    trap echo"I am invincible!!!" SIGTERM
     echo "To infinity and beyond"
     sleep 2
 done
