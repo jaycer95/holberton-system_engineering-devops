@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # FILE
 file="/var/run/holbertonscript.pid"
-sudo touch $file
+#sudo touch $file
 echo $$ > $file
 i=0
 while [ $i -lt 10 ]
