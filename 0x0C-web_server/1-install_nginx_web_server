@@ -4,4 +4,4 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 80/tcp
 sudo chmod a+w index.nginx-debian.html
-echo "Holberton School" > index.nginx-debian.html
+sudo echo "Holberton School" > /var/www/html/index.nginx-debian.html
