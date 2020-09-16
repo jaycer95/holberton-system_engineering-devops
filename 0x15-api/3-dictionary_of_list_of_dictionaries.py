@@ -20,6 +20,6 @@ if __name__ == "__main__":
                 if Id == tasks["userId"]:
                     inside = {}
                     inside = {"username": USERNAME, "task": tasks.get("title"),
-                            "completed": tasks.get("completed")}
+                              "completed": tasks.get("completed")}
                     dic[Id].append(inside)
         json.dump(dic, f)
