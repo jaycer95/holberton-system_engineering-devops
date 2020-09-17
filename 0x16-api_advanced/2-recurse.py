@@ -7,7 +7,8 @@ def recurse(subreddit, hot_list=[], after=''):
 
     header = {'User-agent': 'Electronic_Border115'}
     r = requests.get(
-        'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit, after),
+        'https://www.reddit.com/r/{}/hot.json?after={}'.
+        format(subreddit, after),
         headers=header)
     if r.status_code != 200:
         print(None)
