@@ -5,3 +5,4 @@ exec { 'Ulimit nginx':
 sudo service nginx restart',
   provider=> shell,
 }
+
